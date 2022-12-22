@@ -37,7 +37,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Instagram Clone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv3-JN-T4y">
                                 <rect key="frame" x="76" y="104" width="242" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="ufB-bg-978"/>
+                                    <constraint firstAttribute="height" constant="21" id="EeU-1B-u9l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -55,18 +55,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Gv3-JN-T4y" firstAttribute="trailing" secondItem="dpt-8t-b51" secondAttribute="trailing" id="CE8-6m-dbt"/>
-                            <constraint firstItem="dpt-8t-b51" firstAttribute="leading" secondItem="DCx-zN-Kjx" secondAttribute="trailing" constant="67" id="Jwn-zQ-xve"/>
-                            <constraint firstItem="p3A-bm-Tdf" firstAttribute="top" secondItem="fM9-Th-k86" secondAttribute="bottom" constant="32" id="Rft-RY-uKs"/>
-                            <constraint firstItem="fM9-Th-k86" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="b2P-Jr-c1h"/>
-                            <constraint firstItem="DCx-zN-Kjx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="fQ3-S3-0b0"/>
-                            <constraint firstItem="fM9-Th-k86" firstAttribute="top" secondItem="Gv3-JN-T4y" secondAttribute="bottom" constant="42" id="hQf-Tu-CDx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fM9-Th-k86" secondAttribute="trailing" constant="50" id="pNi-MP-f3X"/>
-                            <constraint firstItem="fM9-Th-k86" firstAttribute="leading" secondItem="p3A-bm-Tdf" secondAttribute="leading" id="rCS-MD-3Nj"/>
-                            <constraint firstItem="fM9-Th-k86" firstAttribute="trailing" secondItem="p3A-bm-Tdf" secondAttribute="trailing" id="tjk-4p-t0S"/>
-                            <constraint firstItem="DCx-zN-Kjx" firstAttribute="top" secondItem="p3A-bm-Tdf" secondAttribute="bottom" constant="45" id="u5Z-ex-ffg"/>
-                            <constraint firstItem="DCx-zN-Kjx" firstAttribute="baseline" secondItem="dpt-8t-b51" secondAttribute="baseline" id="wkl-4c-aqT"/>
-                            <constraint firstItem="Gv3-JN-T4y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="xuv-3L-43S"/>
+                            <constraint firstItem="DCx-zN-Kjx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="1cf-OV-Hz5"/>
+                            <constraint firstItem="DCx-zN-Kjx" firstAttribute="top" secondItem="p3A-bm-Tdf" secondAttribute="bottom" constant="45" id="8Zo-4d-DXj"/>
+                            <constraint firstItem="DCx-zN-Kjx" firstAttribute="baseline" secondItem="dpt-8t-b51" secondAttribute="baseline" id="Iid-J7-1nh"/>
+                            <constraint firstItem="fM9-Th-k86" firstAttribute="trailing" secondItem="p3A-bm-Tdf" secondAttribute="trailing" id="Tpk-WB-rbU"/>
+                            <constraint firstItem="Gv3-JN-T4y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XEA-w5-f6F"/>
+                            <constraint firstItem="fM9-Th-k86" firstAttribute="leading" secondItem="p3A-bm-Tdf" secondAttribute="leading" id="ayn-4B-vB8"/>
+                            <constraint firstItem="dpt-8t-b51" firstAttribute="leading" secondItem="DCx-zN-Kjx" secondAttribute="trailing" constant="67" id="ciO-LV-dRv"/>
+                            <constraint firstItem="fM9-Th-k86" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="k5K-G0-7fg"/>
+                            <constraint firstItem="p3A-bm-Tdf" firstAttribute="top" secondItem="fM9-Th-k86" secondAttribute="bottom" constant="32" id="kaU-Vx-uDJ"/>
+                            <constraint firstItem="fM9-Th-k86" firstAttribute="top" secondItem="Gv3-JN-T4y" secondAttribute="bottom" constant="42" id="n49-0q-6yl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fM9-Th-k86" secondAttribute="trailing" constant="50" id="oJA-gZ-t0j"/>
+                            <constraint firstItem="Gv3-JN-T4y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="rb3-cg-Vuk"/>
+                            <constraint firstItem="Gv3-JN-T4y" firstAttribute="trailing" secondItem="dpt-8t-b51" secondAttribute="trailing" id="sn4-1a-m8i"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PxW-2j-gIu"/>
@@ -83,7 +84,7 @@
         <!--Upload-->
         <scene sceneID="QAA-Np-66l">
             <objects>
-                <viewController id="rt5-Ck-vRS" sceneMemberID="viewController">
+                <viewController id="rt5-Ck-vRS" customClass="UploadViewController" customModule="InstaCloneFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a1p-OH-unL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,10 +97,44 @@
             </objects>
             <point key="canvasLocation" x="-973" y="640"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="djp-u6-Jkv">
+            <objects>
+                <viewController id="XpO-3D-sYI" customClass="SettingsViewController" customModule="InstaCloneFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SXr-FE-A4W">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLA-Mj-1BZ">
+                                <rect key="frame" x="146" y="341" width="100" height="54"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutClicked:" destination="XpO-3D-sYI" eventType="touchUpInside" id="nYc-Rr-UvN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nLS-35-hyf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PLA-Mj-1BZ" firstAttribute="leading" secondItem="nLS-35-hyf" secondAttribute="leading" constant="146" id="jca-bX-AAQ"/>
+                            <constraint firstItem="nLS-35-hyf" firstAttribute="bottom" secondItem="PLA-Mj-1BZ" secondAttribute="bottom" constant="374" id="pnY-93-DGU"/>
+                            <constraint firstItem="PLA-Mj-1BZ" firstAttribute="top" secondItem="nLS-35-hyf" secondAttribute="top" constant="282" id="x75-mY-0vG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="lqw-5o-n83"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewController" modalPresentationStyle="fullScreen" id="h0p-Mq-Vom"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWC-hp-t2u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-976.33587786259534" y="1303.5211267605634"/>
+        </scene>
         <!--Feed-->
         <scene sceneID="5Zw-Xa-cZB">
             <objects>
-                <viewController id="glU-c4-GaT" sceneMemberID="viewController">
+                <viewController id="glU-c4-GaT" customClass="FeedViewController" customModule="InstaCloneFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UzU-w2-Avz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,6 +160,7 @@
                     <connections>
                         <segue destination="glU-c4-GaT" kind="relationship" relationship="viewControllers" id="e4f-69-jyU"/>
                         <segue destination="rt5-Ck-vRS" kind="relationship" relationship="viewControllers" id="yH4-rl-zNE"/>
+                        <segue destination="XpO-3D-sYI" kind="relationship" relationship="viewControllers" id="TUL-08-BgT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdd-0y-S2y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -134,6 +170,7 @@
     </scenes>
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="s.circle.fill" catalog="system" width="128" height="123"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
